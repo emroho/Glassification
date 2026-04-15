@@ -90,13 +90,27 @@ The notebook (`notebooks/GlassClassification.ipynb`) covers:
 
 ## 🚀 Getting Started
 
-### Prerequisites
+### 1. Create and activate a virtual environment
 
-```bash
-pip install pandas numpy matplotlib seaborn scikit-learn ipywidgets jupyter
+**Windows (PowerShell):**
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
 ```
 
-### Run the Notebook
+**macOS/Linux:**
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+### 2. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the notebook
 
 ```bash
 jupyter notebook notebooks/GlassClassification.ipynb
