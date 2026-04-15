@@ -90,34 +90,50 @@ The notebook (`notebooks/GlassClassification.ipynb`) covers:
 
 ## 🚀 Getting Started
 
-### 1. Create and activate a virtual environment
+### 1. Open PowerShell and go to the project folder
 
-**Windows (PowerShell):**
 ```powershell
-python -m venv .venv
+cd C:\Users\emmah\Downloads\CMSE492\GlassClassification
+```
+
+### 2. Create the virtual environment
+
+```powershell
+py -3 -m venv .venv
+```
+
+### 3. If activation is blocked, allow scripts for this session only
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
+
+### 4. Activate the virtual environment (PowerShell)
+
+```powershell
 .\.venv\Scripts\Activate.ps1
 ```
 
-**macOS/Linux:**
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
+### 5. Upgrade pip
+
+```powershell
+python -m pip install --upgrade pip
 ```
 
-### 2. Install dependencies
+### 6. Install dependencies
 
-```bash
+```powershell
 pip install -r requirements.txt
 ```
 
-### 3. Run the notebook
+### 7. Run the notebook
 
-```bash
-jupyter notebook notebooks/GlassClassification.ipynb
+```powershell
+jupyter notebook notebooks\GlassClassification.ipynb
 ```
 
-> **Tip:** To use the interactive widget, make sure ipywidgets is enabled:
-> ```bash
+> **Tip:** If you use classic Jupyter Notebook and widgets do not appear, run:
+> ```powershell
 > jupyter nbextension enable --py widgetsnbextension
 > ```
 
