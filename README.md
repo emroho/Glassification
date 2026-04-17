@@ -4,6 +4,12 @@ A data science project that uses the chemical composition of glass to predict it
 
 ---
 
+# AI Usage Note
+
+I used GitHub Copilot to help draft parts of this project. I am the one responsible for reviewing, testing, and revising any AI-generated output before treating it as correct. AI assistance is primarily used to accelerate development, but is not used to replace my own judgment.
+
+---
+
 ## 📋 Problem Statement
 
 Given nine chemical attributes of a glass sample, classify it into one of six observable glass types:
